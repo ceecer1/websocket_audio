@@ -14,7 +14,7 @@ BYTES_PER_SAMPLE = CHANNELS * SAMPLE_WIDTH
 BYTES_PER_SECOND = SAMPLE_RATE * BYTES_PER_SAMPLE
 
 # Silence Detection Parameters
-SILENCE_THRESHOLD = 500  # Amplitude threshold for 16-bit audio (-32768 to 32767). Tune this!
+SILENCE_THRESHOLD = 800  # Amplitude threshold for 16-bit audio (-32768 to 32767). Tune this!
                           # Lower means more sensitive to noise (less likely to detect silence).
                           # Higher means less sensitive (more likely to call faint speech silence).
 MAX_SILENCE_SECONDS = 1.0 # Stop relaying if silent for this duration.
